@@ -1,0 +1,2 @@
+# Get the installation package from GitHub for MacOS ARM
+Get-PSReleaseAsset -Family MacOS -LTS -Format pkg | Save-PSReleaseAsset -Path "$PSScriptRoot/../Updates/" | Remove-Item "$PSScriptRoot./Updates/*x64*"
